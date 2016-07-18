@@ -10,11 +10,7 @@ import React, { Component } from 'react';
 // render is a method on the object that we create when we instantiate a new instance of the SearchBar class.
 class SearchBar extends Component{ // extends off of React.component
   render() { 
-    return <input onChange={this.onInputChange} />; // tapping into a regular browser event.
-  }
-  
-  onInputChange(event) { // the event object describes the event which occured
-    console.log(event);
+    return <input onChange={event => console.log(event.target.value)} />; // tapping into a regular browser event.
   }
   
 }
