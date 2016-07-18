@@ -5,8 +5,6 @@ import AK from './components/api_key';
 import SearchBar from './components/search_bar';
 
 const API_KEY = AK;
-console.log(AK);
-
 
 // 1). Create a new component. This component should produce some HTML
 const App = () => { // factory that creates instances.
