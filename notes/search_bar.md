@@ -105,6 +105,14 @@ dont' ever manuyally change the state without using setState() method.
   
   - we don't want an imparetive flow of data
   - we want a declarative form of data
-  
-  
+
+#####  
+
+- a fnctional component may contain a class based component
+
+- when the state updates, it causes the entire copmonent to re-render. 
+
+### Downwards DataFlow, 
+- only the most parent component shoudl be responsible for fetching data. 
+
 

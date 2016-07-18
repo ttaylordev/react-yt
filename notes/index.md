@@ -43,3 +43,37 @@ ReactDOM.render(<App />, document.querySelector('.container'));
 // ################################# \\
 
 // < div/> creates a self closing tag.
+
+
+
+
+
+####### latest 
+
+
+import React from 'react';  
+import ReactDOM from 'react-dom'; 
+import AK from './components/api_key';
+import YTSearch from 'youtube-api-search';
+import SearchBar from './components/search_bar';
+const API_KEY = AK;
+
+
+// fetch the list of videos
+// pass some configuration options, then a callback function
+YTSearch({key: AK, term: 'surfboards'}, function(data){
+  console.log(data);
+})
+
+const App = () => {
+  return (
+    <div>
+      <SearchBar />
+      {/*<VideoDetail />*/}
+      {/*<Video_List />*/}
+      {/*<VideoListItem />*/}
+    </div>
+  );
+}
+
+ReactDOM.render(<App />, document.querySelector('.container')); 
