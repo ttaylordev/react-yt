@@ -122,5 +122,14 @@ dont' ever manuyally change the state without using setState() method.
 
 - do I expect this component6 to need to maintain any kind of state?
 
+### when the component loads ###
+
+- when we're waiting for an async http response, while things are rendering, they'll render undefined if we're calling them later on, until the response is returned. 
+
+- react often wants to load instantly, sometimes the parent objects can't fetch information fast enough to satyisfy the children compnoeonts
+
+
+
+
 
 
