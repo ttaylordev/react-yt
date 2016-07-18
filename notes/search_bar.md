@@ -128,7 +128,10 @@ dont' ever manuyally change the state without using setState() method.
 
 - react often wants to load instantly, sometimes the parent objects can't fetch information fast enough to satyisfy the children compnoeonts
 
+### throttle the search updating ####
 
+- on each keystroke seems buggy
+- 
 
 
 
