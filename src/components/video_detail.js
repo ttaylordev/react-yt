@@ -11,8 +11,8 @@ const VideoDetail = ({video}) => {
   
   return (
     <div className="video-detail col-md-8">
-      <div className="enmbad-responsive embad-responsive-16by9">
-        <iframe className="embad-responsive-item" src={url}></iframe>
+      <div className="embed-responsive embed-responsive-16by9">
+        <iframe className="embed-responsive-item" src={url}></iframe>
       </div>
       <div className="details"> 
         <div>{video.snippet.title}</div>

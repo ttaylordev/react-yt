@@ -21,7 +21,10 @@ class App extends Component {
     };
     
     YTSearch({key: AK, term: 'surfboards'}, (videos) => {
-      this.setState({ videos });
+      this.setState({ 
+        videos: videos,
+        selectedVideo: videos[0]
+      });
     });
   }
   
@@ -30,7 +33,9 @@ class App extends Component {
       <div>
         <SearchBar />
         <VideoDetail video={this.state.selectedVideo}/>
-        <VideoList videos={this.state.videos}/>
+        <VideoList 
+         onVideoSelect={selectedVideo => this.setState({selectedVideo})} 
+         videos={this.state.videos}/>
         {/*<VideoListItem />*/}
       </div>
     );
@@ -38,3 +43,8 @@ class App extends Component {
 }
 
 ReactDOM.render(<App />, document.querySelector('.container')); 
+
+
+
+// onVideoSelect // passes a function that manipulates another component
+//  it adds a method into video_list.js
