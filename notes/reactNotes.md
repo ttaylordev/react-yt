@@ -28,6 +28,26 @@ functional
  
  - when you refactor from one to the other, you'll need to change from just calling props to calling this.props.
  
+<label>map</label>
+ ```js
+ 
+ var array = [1,2,3];
+ array.map
+ 
+function map() {[native code]};
+array.map(function(number) { return number * 2});
+
+// [2, 4, 6] 
+
+array.map(function(number) { return '<div> + number + </div>'})
+
+  ```
+ 
+ - React has a bunch of logic that aids in rendering lists. 
+ - always add a key when listing items with .map 
+  - the returned object in an HTTP request shoudl usually have a key that we can use.
+  
+
  
  
  
