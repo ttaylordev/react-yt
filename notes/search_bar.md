@@ -116,3 +116,11 @@ dont' ever manuyally change the state without using setState() method.
 - only the most parent component shoudl be responsible for fetching data. 
 
 
+
+
+### ask yourself ### 
+
+- do I expect this component6 to need to maintain any kind of state?
+
+
+
