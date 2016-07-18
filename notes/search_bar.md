@@ -13,13 +13,12 @@ class SearchBar extends Component{ // extends off of React.component
   // initializing state in the class based component
   // all JS classes have a special method called constructor, it's the first and only function called automatically whenver a new instance of a class is created. 
   // it is reserved for setup inside the class, like initializing variables, initializing state, etc.
-  // each instance of a component has its' own state.
   
   constructor(props) {
     // Component has it's own constructor method, we can call that method on a parent class by calling 'super'.
     super(props);
     // whenever we use state we initialize it by creating a new object and assigning it to this.state. The object we pass will also contain properties that we want to record on the state. e.g. 'term' (shorthand for searchTerm)
-    this.state = { term: ''}; // the value of the input.
+    this.state = { term: ''};
   }
   
   render() { 
