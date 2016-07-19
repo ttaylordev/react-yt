@@ -131,7 +131,9 @@ dont' ever manuyally change the state without using setState() method.
 ### throttle the search updating ####
 
 - on each keystroke seems buggy
-- 
+- callbacks are a great way to handle parent-child communication
+
+
 
 
 

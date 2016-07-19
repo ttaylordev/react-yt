@@ -48,8 +48,3 @@ class App extends Component {
 }
 
 ReactDOM.render(<App />, document.querySelector('.container')); 
-
-
-
-// onVideoSelect // passes a function that manipulates another component
-//  it adds a method into video_list.js
